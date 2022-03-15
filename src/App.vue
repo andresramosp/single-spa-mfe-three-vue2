@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>{{ 'Hello from Micro Frontend Three (Vue 2)' }}</h1>
+    <h1>{{ 'Micro Frontend Three (Vue 2 + Leaflet)' }}</h1>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
