@@ -1,19 +1,26 @@
 <template>
   <div id="app">
-    <h1>{{ 'Micro Frontend Three (Vue 2 + Leaflet)' }}</h1>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>{{ "Micro Frontend Three (Vue 2 + Leaflet)" }}</h1>
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+    {{ dateMoment }}
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import moment from "moment";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+  },
+  data() {
+    return {
+      dateMoment: moment().format("MMMM Do YYYY, h:mm:ss a"),
+    };
+  },
+};
 </script>
 
 <style>
