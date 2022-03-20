@@ -7,7 +7,8 @@ module.exports = defineConfig({
       libraryTarget: 'system'
     },
     externals: [
-      'moment'
+      'moment',
+      'org/auth'
     ]
   }
 })
